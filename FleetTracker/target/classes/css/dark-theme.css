@@ -1,0 +1,271 @@
+/*
+ * Dark theme for the FleetTracker dashboard.
+ * Palette modeled on the reference image: near-black background,
+ * dark-navy cards, blue accent, green/amber/red status colors.
+ */
+
+* {
+    -fx-accent-blue: #2f6fed;
+    -fx-bg-root: #0b1220;
+    -fx-bg-sidebar: #0e1626;
+    -fx-bg-card: #131b2c;
+    -fx-bg-card-alt: #182238;
+    -fx-border-subtle: #223049;
+    -fx-text-primary: #e7ecf5;
+    -fx-text-secondary: #8b95a7;
+    -fx-green: #22c55e;
+    -fx-amber: #eab308;
+    -fx-red: #ef4444;
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.app-root {
+    -fx-background-color: -fx-bg-root;
+}
+
+/* ===== Sidebar ===== */
+
+.sidebar {
+    -fx-background-color: -fx-bg-sidebar;
+    -fx-border-color: transparent -fx-border-subtle transparent transparent;
+    -fx-border-width: 0 1 0 0;
+    -fx-padding: 18 14 18 14;
+    -fx-spacing: 18;
+}
+
+.brand-icon {
+    -fx-font-size: 20px;
+}
+
+.brand-title {
+    -fx-text-fill: -fx-text-primary;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.nav-menu {
+    -fx-spacing: 4;
+}
+
+.nav-item {
+    -fx-text-fill: -fx-text-secondary;
+    -fx-padding: 10 14 10 14;
+    -fx-background-radius: 8;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-pref-width: 192;
+}
+
+.nav-item:hover {
+    -fx-background-color: -fx-bg-card-alt;
+    -fx-text-fill: -fx-text-primary;
+}
+
+.nav-item-active {
+    -fx-background-color: -fx-accent-blue;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.section-label {
+    -fx-text-fill: -fx-text-secondary;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.stat-card {
+    -fx-background-color: -fx-bg-card;
+    -fx-background-radius: 10;
+    -fx-padding: 10 14 10 14;
+    -fx-spacing: 4;
+    -fx-border-color: -fx-border-subtle;
+    -fx-border-radius: 10;
+    -fx-border-width: 1;
+}
+
+.stat-label {
+    -fx-text-fill: -fx-text-secondary;
+    -fx-font-size: 12px;
+}
+
+.stat-value {
+    -fx-text-fill: -fx-text-primary;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.stat-value-green { -fx-text-fill: -fx-green; }
+.stat-value-blue { -fx-text-fill: -fx-accent-blue; }
+.stat-value-amber { -fx-text-fill: -fx-amber; }
+.stat-value-red { -fx-text-fill: -fx-red; }
+
+/* ===== Top bar ===== */
+
+.topbar {
+    -fx-background-color: -fx-bg-root;
+    -fx-border-color: transparent transparent -fx-border-subtle transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.page-title {
+    -fx-text-fill: -fx-text-primary;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.live-badge {
+    -fx-background-color: rgba(34, 197, 94, 0.15);
+    -fx-background-radius: 12;
+    -fx-padding: 3 10 3 10;
+}
+
+.live-dot {
+    -fx-text-fill: -fx-green;
+    -fx-font-size: 10px;
+}
+
+.live-text {
+    -fx-text-fill: -fx-green;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.search-field {
+    -fx-background-color: -fx-bg-card;
+    -fx-background-radius: 8;
+    -fx-text-fill: -fx-text-primary;
+    -fx-prompt-text-fill: -fx-text-secondary;
+    -fx-padding: 8 12 8 12;
+    -fx-border-color: -fx-border-subtle;
+    -fx-border-radius: 8;
+}
+
+.icon-button {
+    -fx-font-size: 16px;
+    -fx-text-fill: -fx-text-secondary;
+    -fx-cursor: hand;
+}
+
+.profile-name {
+    -fx-text-fill: -fx-text-primary;
+    -fx-font-weight: bold;
+}
+
+/* ===== Content area ===== */
+
+.content-scroll {
+    -fx-background-color: -fx-bg-root;
+    -fx-background: -fx-bg-root;
+}
+
+.content-area {
+    -fx-background-color: -fx-bg-root;
+}
+
+.card {
+    -fx-background-color: -fx-bg-card;
+    -fx-background-radius: 14;
+    -fx-border-color: -fx-border-subtle;
+    -fx-border-radius: 14;
+    -fx-border-width: 1;
+    -fx-padding: 16;
+    -fx-spacing: 10;
+}
+
+.card-title {
+    -fx-text-fill: -fx-text-primary;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.map-pane {
+    -fx-background-color: -fx-bg-card-alt;
+    -fx-background-radius: 10;
+    -fx-border-color: -fx-border-subtle;
+    -fx-border-radius: 10;
+}
+
+.detail-status {
+    -fx-text-fill: -fx-green;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.detail-row {
+    -fx-spacing: 2;
+}
+
+.detail-row Label {
+    -fx-text-fill: -fx-text-secondary;
+    -fx-font-size: 12px;
+}
+
+.summary-card {
+    -fx-background-color: -fx-bg-card-alt;
+    -fx-background-radius: 10;
+    -fx-padding: 12;
+    -fx-spacing: 4;
+}
+
+.primary-button {
+    -fx-background-color: -fx-accent-blue;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+    -fx-font-weight: bold;
+    -fx-padding: 10;
+    -fx-cursor: hand;
+}
+
+.primary-button:hover {
+    -fx-background-color: derive(-fx-accent-blue, 15%);
+}
+
+.secondary-button {
+    -fx-background-color: -fx-bg-card-alt;
+    -fx-text-fill: -fx-text-primary;
+    -fx-background-radius: 8;
+    -fx-border-color: -fx-border-subtle;
+    -fx-border-radius: 8;
+    -fx-padding: 10;
+    -fx-cursor: hand;
+}
+
+.secondary-button:hover {
+    -fx-background-color: derive(-fx-bg-card-alt, 10%);
+}
+
+.alerts-list {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: -fx-bg-card;
+}
+
+.alerts-list .list-cell {
+    -fx-background-color: -fx-bg-card;
+    -fx-text-fill: -fx-text-primary;
+    -fx-padding: 8;
+}
+
+.table-view {
+    -fx-background-color: -fx-bg-card;
+    -fx-control-inner-background: -fx-bg-card;
+    -fx-table-cell-border-color: -fx-border-subtle;
+}
+
+.table-view .column-header,
+.table-view .column-header-background {
+    -fx-background-color: -fx-bg-card-alt;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: -fx-text-secondary;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell {
+    -fx-background-color: -fx-bg-card;
+    -fx-text-fill: -fx-text-primary;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: -fx-bg-card-alt;
+}
